@@ -1,4 +1,61 @@
 baseURL = 'https://calfolio.github.io'
-languageCode = 'en-us'
+languageCode = 'en-gb'
 title = 'My Portfolio'
 theme = 'hugo-blog-awesome'
+
+enableEmoji = true
+
+[services.googleAnalytics]
+    id = '' # G-MEASUREMENT_ID
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[params]
+  sitename = "cal-folio"
+  defaultColor = "dark"
+  description = "IT portfolio — projects, write-ups, and learning notes"
+  mainSections = ['posts']
+  toc = false
+  tocOpen = false
+  goToTop = true
+  rssFeedDescription = "summary"
+
+[params.author]
+  avatar = "avatar.jpg"
+  intro = "Hey, I'm Callum"
+  name = ""
+  description = "Aspiring techie.Perpetually 12 tabs deep.<br>Here's my attempt to have something to show for it."
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  URL = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Projects'
+  url = '/projects/'
+  weight = 20
+[[menu.main]]
+  name = 'Blog'
+  url = '/blog/'
+  weight = 30
+[[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 40
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/cal-folio"
+
+[[params.socialIcons]]
+  name = "Rss"
+  url = "/index.xml"
